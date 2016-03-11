@@ -1,0 +1,10 @@
+{
+    "name": "",
+    "description": "",
+    "require": {
+        "slim/slim": "~2.0",
+        "entomb/slim-json-api": "dev-master",
+        "cboden/ratchet": "0.3.*",
+        "react/zmq": "0.2.*|0.3.*"
+    }
+}

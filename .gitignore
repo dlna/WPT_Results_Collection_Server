@@ -1,0 +1,6 @@
+data
+vendor
+packages
+composer.lock
+*.user
+*.suo

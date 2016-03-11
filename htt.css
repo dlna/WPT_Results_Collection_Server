@@ -1,0 +1,96 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.sessions { width: 100%; table-layout:fixed; border-spacing: 0; }
+.sessions thead { background-color: #bbb; font-weight: bold; color: #444; text-shadow: #f7f7f7 0 1px 1px; }
+.sessions tbody tr:hover { cursor: pointer; background-color: #68c !important; color: White; } 
+.sessions tbody tr:hover input { background-color: White; color: Black; } 
+.sessions th, .sessions td { text-align:left; padding: 0.4em 0.3em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sessions th { border-left: 1px solid #ddd; border-right: 1px solid #888; padding: 0.4em 0 0.3em 0.7em; }    
+.sessions th:nth-child(1), .sessions td:nth-child(1) { width: 5%; }
+.sessions th:nth-child(2), .sessions td:nth-child(2) { width: 40%; }
+.sessions th:nth-child(3), .sessions td:nth-child(3) { width: 5%; }
+.sessions th:nth-child(4), .sessions td:nth-child(4) { width: 23%; }
+.sessions th:nth-child(5), .sessions td:nth-child(5) { width: 23%; }
+.sessions th:nth-child(6), .sessions td:nth-child(6) { width: 4%; }
+.sessions th:last-child { border-right: none }
+.sessions tr:nth-child(even) { background-color: #EEE; }
+.sessions tr input { width: 100%; border: none; background-color: White; color: Black; } 
+
+.results { width: 100%; table-layout:fixed; border-spacing: 0; }
+.results thead { background-color: #bbb; font-weight: bold; color: #444; text-shadow: #f7f7f7 0 1px 1px; }
+/* .results tbody tr:hover { cursor: pointer; background-color: #68c !important; color: White; } */
+.results th, .results td { text-align:left; padding: 0.4em 0.3em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.results th { border-left: 1px solid #ddd; border-right: 1px solid #888; padding: 0.4em 0 0.3em 0.7em; }    
+.results th:nth-child(1), .results td:nth-child(1) { width: 50%; }
+.results th:nth-child(2), .results td:nth-child(2) { width: 10%; }
+.results th:nth-child(3), .results td:nth-child(3) { width: 30%; }
+.results th:nth-child(4), .results td:nth-child(4) { width: 10%; }
+.results th:last-child { border-right: none }
+.results tr:nth-child(even) { background-color: #EEE; }
+.results tr.pass td:nth-child(2), td.pass { color:  #48cfad; }
+.results tr.fail td:nth-child(2), td.fail { color:  #ed5565; }
+.results tr.timeout td:nth-child(2), td.timeout { color:  #f6bb42; }
+.results tr.error td:nth-child(2), td.error { color:  #da4453; font-weight: bold; }
+
+.reportList { width: 100%; table-layout:fixed; border-spacing: 0; }
+.reportList thead { background-color: #bbb; font-weight: bold; color: #444; text-shadow: #f7f7f7 0 1px 1px; }
+.reportList tbody tr:hover { cursor: pointer; background-color: #68c !important; color: White; } 
+.reportList tbody tr:hover input { background-color: White; color: Black; } 
+.reportList th, .sessions td { text-align:left; padding: 0.4em 0.3em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reportList th { border-left: 1px solid #ddd; border-right: 1px solid #888; padding: 0.4em 0 0.3em 0.7em; }    
+.reportList th:nth-child(1), .sessions td:nth-child(1) { width: 5%; }
+.reportList th:nth-child(2), .sessions td:nth-child(2) { width: 50%; }
+.reportList th:nth-child(3), .sessions td:nth-child(3) { width: 40%; }
+.reportList th:nth-child(4), .sessions td:nth-child(4) { width: 5%; }
+.reportList th:last-child { border-right: none }
+.reportList tr:nth-child(even) { background-color: #EEE; }
+.reportList tr input { width: 100%; border: none; background-color: White; color: Black; } 
+
+.reportLog { width: 100%; table-layout:fixed; border-spacing: 0; }
+.reportLog thead { background-color: #bbb; font-weight: bold; color: #444; text-shadow: #f7f7f7 0 1px 1px; }
+.reportLog th, .results td { text-align:left; padding: 0.4em 0.3em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.reportLog th { border-left: 1px solid #ddd; border-right: 1px solid #888; padding: 0.4em 0 0.3em 0.7em; }    
+.reportLog th:nth-child(1), .results td:nth-child(1) { width: 5%; }
+.reportLog th:nth-child(2), .results td:nth-child(2) { width: 40%; }
+.reportLog th:nth-child(3), .results td:nth-child(3) { width: 40%; }
+.reportLog th:nth-child(4), .results td:nth-child(4) { width: 15%; }
+.reportLog th:last-child { border-right: none }
+.reportLog tr:nth-child(even) { background-color: #EEE; }
+.reportLog tr.pass td:nth-child(2), td.pass { color:  #48cfad; }
+.reportLog tr.fail td:nth-child(2), td.fail { color:  #ed5565; }
+.reportLog tr.timeout td:nth-child(2), td.timeout { color:  #f6bb42; }
+.reportLog tr.error td:nth-child(2), td.error { color:  #da4453; font-weight: bold; }
+
+.edit {
+    display: none;    
+}
+
+.editing .edit {
+    display: block;    
+}
+
+.editing .view {
+    display: none;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

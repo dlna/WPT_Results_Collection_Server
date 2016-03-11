@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>HTML5_Test_Tool</Name>
+    <ProjectGuid>{28eafad7-3d87-4928-b3aa-8abe14d51c45}</ProjectGuid>
+    <RootNamespace>HTML5_Test_Tool</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Server>PHPDev</Server>
+    <PublishEvent>None</PublishEvent>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <PHPDevPort>35127</PHPDevPort>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:35127/</IISProjectUrl>
+    <SpecificPageValue>index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="api.php" />
+    <Compile Include="Reference.php" />
+    <Compile Include="ResultSupport.php" />
+    <Compile Include="Session.php" />
+    <Compile Include="templates\json.php" />
+    <Compile Include="LICENSE" />
+    <Compile Include="logo.svg" />
+    <Compile Include="README.md" />
+    <Compile Include="ValidationReport.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="reference\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="composer.json" />
+    <Content Include="config.json" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="index.php" />
+    <Content Include="js\autobahn.js" />
+    <Content Include="js\autobahn.min.js" />
+    <Content Include="js\NewReferenceViewModel.js" />
+    <Content Include="js\NewReportViewModel.js" />
+    <Content Include="js\DeleteViewModel.js" />
+    <Content Include="js\knockout-3.3.0.debug.js" />
+    <Content Include="js\knockout-3.3.0.js" />
+    <Content Include="js\knockout.mapping-latest.debug.js" />
+    <Content Include="js\knockout.mapping-latest.js" />
+    <Content Include="js\LiveEditor.js" />
+    <Content Include="js\modal.js" />
+    <Content Include="js\ResultsViewModel.js" />
+    <Content Include="js\sammy-latest.min.js" />
+    <Content Include="js\sammy.js" />
+    <Content Include="js\TestReferenceViewModel.js" />
+    <Content Include="js\TestReportListViewModel.js" />
+    <Content Include="js\TestReportViewModel.js" />
+    <Content Include="js\TestResultsViewModel.js" />
+    <Content Include="js\TestSessionViewModel.js" />
+    <Content Include="js\test_tool_manager.js" />
+    <Content Include="js\ValidationViewModel.js" />
+    <Content Include="packages.config" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.9.1.intellisense.js" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-1.9.1.min.map" />
+    <Content Include="htt.css" />
+  </ItemGroup>
+</Project>
